@@ -1,0 +1,40 @@
+{
+  "name": "typescript-bouncing-balls",
+  "version": "0.0.0",
+  "description": "A Typescript demo of Bouncing Balls",
+  "main": "src/components/BouncingBallsDemo.tsx",
+  "scripts": {
+    "install": "typings install",
+    "prepublish": "webpack",
+    "dev-watch": "webpack --watch",
+    "dev-server": "webpack-dev-server",
+    "test": "mocha --harmony_default_parameters --require ts-node/register src/**/*.spec.ts",
+    "test-watch": "mocha --require ts-node/register src/**/*.spec.ts --watch",
+    "clean": "rm -rf dist/"
+  },
+  "author": "Luke Barton <luke@lukebarton.co.uk> (http://www.lukebarton.co.uk/)",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.13.1",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "html-webpack-plugin": "^2.22.0",
+    "karma": "^1.1.1",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-mocha": "^1.1.1",
+    "karma-sinon": "^1.0.5",
+    "karma-webpack": "^1.7.0",
+    "mocha": "^2.5.3",
+    "sinon": "^1.17.4",
+    "ts-loader": "^0.8.2",
+    "ts-node": "^0.9.3",
+    "typescript": "^1.8.10",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-livereload-plugin": "^0.8.1"
+  }
+}
