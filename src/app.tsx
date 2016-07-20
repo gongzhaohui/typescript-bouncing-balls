@@ -2,6 +2,7 @@
 
 import * as React from 'react'
 import { render } from 'react-dom'
+import './css/index.css';
 
 import BouncingBallsDemo from './components/BouncingBallsDemo';
 

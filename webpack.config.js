@@ -10,7 +10,7 @@ module.exports = {
   },
   output: {
     path: __dirname + '/dist',
-    publicPath: '/',
+    publicPath: '',
     filename: '[name].bundle.js'
   },
   resolve: {
@@ -23,6 +23,10 @@ module.exports = {
         test: /\.tsx?$/,
         loaders: ['ts-loader'],
         exclude: /node_modules/
+      },
+      {
+        test: /\.css$/,
+        loader: "style-loader!css-loader"
       }
     ]
   },
