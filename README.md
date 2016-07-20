@@ -1,6 +1,8 @@
 # typescript-bouncing-balls
 A rather basic (and rushed) demo of bouncing balls physics written in typescript.
 
+## Demo
+https://lukebarton.github.io/typescript-bouncing-balls/
 
 ## Usage
 ```bash
