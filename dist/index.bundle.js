@@ -21462,7 +21462,7 @@
 	        var maxDesync = 20 * deltaTime;
 	        var currentTime = getTime();
 	        var frameStart = currentTime;
-	        var interval = setInterval(() => {
+	        let interval = setInterval(() => {
 	            currentTime = getTime();
 	            accumulator += currentTime - frameStart;
 	            frameStart = currentTime;
@@ -21473,7 +21473,7 @@
 	                this.updatePhysics(deltaTime);
 	                accumulator -= deltaTime;
 	            }
-	            var alpha = accumulator / deltaTime;
+	            let alpha = accumulator / deltaTime;
 	            this.renderFrame(alpha);
 	        }, 0);
 	        return () => clearInterval(interval);

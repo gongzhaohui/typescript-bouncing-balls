@@ -33,7 +33,7 @@ export default class BouncingBallsDemo extends React.Component<any, any> {
     var currentTime = getTime()
     var frameStart = currentTime
 
-    var interval = setInterval(() => {
+    let interval = setInterval(() => {
       currentTime = getTime()
 
       accumulator += currentTime - frameStart
@@ -49,7 +49,7 @@ export default class BouncingBallsDemo extends React.Component<any, any> {
         accumulator -= deltaTime
       }
 
-      var alpha = accumulator / deltaTime
+      let alpha = accumulator / deltaTime
       this.renderFrame(alpha)
     }, 0)
 
